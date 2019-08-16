@@ -1,0 +1,22 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+       
+    </style>
+
+    <!-- Application theme. -->
+    
+    <style name="Theme.CustumMD" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/green_color</item>
+    	<item name="colorPrimaryDark">@color/other</item>
+    	<item name="colorAccent">@color/green_color</item>
+    	<item name="android:textColorPrimary">@color/peru_color</item>
+    </style>
+    
+    <style name="ToolBarStyle" parent="">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+    
+</resources>

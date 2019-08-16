@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TripCityMobile</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="show_Photo">Photo</string>
+    <string name="show_Location">Location</string>
+    <string name="show_Search">Search</string>
+    <string name="show_Open">Open</string>
+    <string name="show_Close">Close</string>
+    <string name="title_activity_results">Results</string>
+    <string name="show_NbreStudios">Nbre Studios</string>
+    <string name="show_Reviews">Reviews: </string>
+    <string name="show_Contact">Contact</string>
+    <string name="show_Overall">Overall</string>
+    <string name="show_Call">Call this number</string>
+    <string name="show_NoReferential">Please try anothor referential</string>
+    <string name="show_City">Empty List</string>
+    <string name="title_activity_city_details">City Details</string>
+    <string name="show_Send">Send</string>
+    <string name="mapKey">AIzaSyDPHdpEqPqpXa9OIFbcTJF5mmLZY20f3jQ</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_location">LocationActivity</string>
+    <string name="title_activity_particulars_fragment">Particulars Fragment</string>
+    <string name="show_Appartements">Appartement</string>
+    <string name="show_NbreChambres">Nbre de Chambres</string>
+    <string name="show_Studios">Studios</string>
+    <string name="show_Chambres">Chambres</string>
+    <string name="show_Equipe">Equipe</string>
+    
+    <string-array name="tabs">
+        <item >Informations</item>
+        <item>Location</item>
+    </string-array>
+
+</resources>

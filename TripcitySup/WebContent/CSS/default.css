@@ -1,0 +1,15 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: #333333;
+	font-size: 13px;
+	font-family: "Trebuchet Ms", "Century Gothic", sans-serif;
+}
+
+p.erreur {
+	color: red;
+	text-align: center;
+}

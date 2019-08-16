@@ -1,0 +1,42 @@
+<android.support.v4.widget.DrawerLayout 
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    tools:context="cm.geolocalisation.tripcity.MainActivity" >
+        
+        <include
+            android:id="@+id/toolbar_actionbar"
+        	layout="@layout/toolbar" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:paddingTop="145dp"
+	    	android:paddingBottom="215dp"
+	    	android:paddingLeft="@dimen/activity_horizontal_margin"
+	    	android:paddingRight="@dimen/activity_horizontal_margin"
+	    	tools:context="cm.geolocalisation.tripcity.MainActivity" >
+	    	
+	    	<fragment
+	        	android:name="cm.geolocalisation.tripcity.ParticularsFragment"
+	        	android:id="@+id/particulars_fragment"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="wrap_content" />
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    <fragment
+	        android:name="cm.geolocalisation.tripcity.NavigationDrawerFragment"
+	        android:id="@+id/navigation_drawer_fragment"
+	        android:layout_width="280dp"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="start" />
+    
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,161 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cm.geolocalisation.tripcity.InformationsFragment" >
+    
+    <android.support.v7.widget.CardView
+    	android:layout_width="match_parent"
+    	android:layout_height="200dp"
+    	card_view:cardCornerRadius="0dp"
+    	card_view:cardBackgroundColor="@color/myTextPrimaryColor"
+    	card_view:cardElevation="0dp" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent" >
+            
+            <ImageView
+		        android:id="@+id/extended_image"
+		        android:contentDescription="@string/show_Photo"
+		        android:src = "#d8d8d8"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:drawSelectorOnTop="true"
+		        android:scaleType="centerCrop"
+		        android:layout_centerInParent="true"
+		        android:adjustViewBounds="true"
+		        android:layout_alignParentTop="true" />
+            
+            <android.support.v7.widget.CardView
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	card_view:cardBackgroundColor="@android:color/transparent"
+		    	card_view:cardElevation="0dp"
+		    	android:layout_alignParentBottom="true"
+		    	card_view:cardCornerRadius="0dp"
+		    	android:id="@+id/cvActions" >
+		        
+                <TextView
+	                android:id="@+id/tv_nom"
+			        android:padding="5dp"
+			        android:gravity="center"
+			       	android:layout_width="match_parent"
+			       	android:layout_height="wrap_content" />
+		    </android.support.v7.widget.CardView>
+            
+        </RelativeLayout>
+        
+    </android.support.v7.widget.CardView>
+    
+    <android.support.v7.widget.CardView
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="match_parent"
+    	card_view:cardBackgroundColor="@color/myTextPrimaryColor"
+    	android:layout_height="wrap_content" >
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent" >
+            
+            <TextView
+	            android:id="@+id/showNbreStudios"
+	            android:paddingLeft="5dp"
+	            android:layout_marginBottom="10dp"
+	        	android:layout_width="wrap_content"
+	       	 	android:layout_height="wrap_content"
+	       	 	android:text="@string/show_NbreStudios" />
+            <ImageView
+		        android:contentDescription="@string/show_Photo"
+		        android:src = "@drawable/hr_gray_side"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/showNbreStudios"
+		        android:layout_marginBottom="20dp"
+		        android:drawSelectorOnTop="true"
+		        android:scaleType="fitStart" />
+	    	<TextView
+	        	android:id="@+id/tv_nbreStudios"
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:layout_alignParentRight="true" />
+	    	<TextView
+	    	    android:id="@+id/tv_description"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="20dp"
+		        android:paddingLeft="5dp"
+				android:paddingRight="5dp"
+				android:paddingBottom="5dp"
+		        android:layout_below="@id/tv_nbreStudios" />
+	    	
+        </RelativeLayout>
+	    
+    </android.support.v7.widget.CardView>
+      
+    <android.support.v7.widget.CardView
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	card_view:cardBackgroundColor="@color/myTextPrimaryColor"
+    	android:paddingLeft="5dp"
+		android:paddingRight="5dp"
+		android:paddingBottom="5dp" >
+        
+        <RelativeLayout
+	        android:id="@+id/layout_nomContact"
+	        android:layout_width="match_parent"
+	   	 	android:layout_height="wrap_content"
+	   	 	android:paddingTop="0dp" >
+	        
+	        <TextView
+	            android:id="@+id/tv_contact"
+	            android:paddingLeft="5dp"
+	            android:layout_marginBottom="10dp"
+	        	android:layout_width="wrap_content"
+	       	 	android:layout_height="wrap_content"
+	       	 	android:text="@string/show_Contact" />
+	        <ImageView
+		        android:contentDescription="@string/show_Photo"
+		        android:src = "@drawable/hr_gray_main"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/tv_contact"
+		        android:layout_marginBottom="10dp"
+		        android:drawSelectorOnTop="true"
+		        android:scaleType="fitStart" />
+	        
+	        <RelativeLayout
+	            android:layout_width="wrap_content"
+	       	 	android:layout_height="wrap_content"
+	       	 	android:layout_marginTop="20dp"
+	       	 	android:paddingLeft="5dp"
+	       	 	android:layout_below="@id/tv_contact" >
+                
+                <TextView
+		            android:id="@+id/tv_contactToCall"
+		        	android:layout_width="wrap_content"
+		        	android:layout_height="wrap_content" />
+		        
+			        <Button
+			        	android:id="@+id/bt_telephone"
+			        	android:layout_width="wrap_content"
+			        	android:layout_marginBottom="5dp"
+			        	android:layout_below="@id/tv_contactToCall"
+			        	android:layout_height="wrap_content"
+			        	android:onClick="callThisNumber" />
+			        <Button
+			            android:background="@drawable/ic_call_black_18dp"
+			        	android:layout_width="wrap_content"
+			        	android:layout_toRightOf="@id/bt_telephone"
+			        	android:layout_height="36dp"
+			        	android:onClick="callThisNumber" />
+		        </RelativeLayout>
+	    </RelativeLayout>
+    
+    </android.support.v7.widget.CardView>
+   
+</LinearLayout>

@@ -1,0 +1,28 @@
+<RelativeLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+    	tools:context="cm.geolocalisation.tripcity.ResultsActivity" >
+        
+        <include
+            android:id="@+id/toolbar_actionbar_result"
+        	layout="@layout/toolbar" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:orientation="vertical"
+	    	android:layout_below="@id/toolbar_actionbar_result"
+	    	android:background="@color/myDrawerBackground"
+	    	tools:context="cm.geolocalisation.tripcity.LocationActivity" >
+            
+            <fragment
+	        	android:name="cm.geolocalisation.tripcity.CitiesFragment"
+	        	android:id="@+id/cities_list"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="match_parent" />
+	    	
+        </LinearLayout>
+        
+</RelativeLayout>

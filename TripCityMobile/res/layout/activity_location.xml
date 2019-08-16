@@ -1,0 +1,28 @@
+<RelativeLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+    	tools:context="cm.geolocalisation.tripcity.LocationActivity" >
+        
+        <include
+            android:id="@+id/toolbar_actionbar_location"
+        	layout="@layout/toolbar" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+	    	android:layout_height="match_parent"
+	    	android:orientation="vertical"
+	    	android:layout_below="@id/toolbar_actionbar_location"
+	    	android:background="@color/myDrawerBackground"
+	    	tools:context="cm.geolocalisation.tripcity.LocationActivity" >
+            
+	    	<fragment
+                android:name="cm.geolocalisation.tripcity.ReferentialFragment"
+	    		android:id="@+id/referentials"
+	    		android:layout_width="match_parent"
+	    		android:layout_height="wrap_content" />
+	    	
+        </LinearLayout>
+        
+</RelativeLayout>
